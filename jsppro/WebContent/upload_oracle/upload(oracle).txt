@@ -1,0 +1,27 @@
+create table upload( num number,
+                    writer varchar2(20) not null,
+	    email varchar2(30),
+                    subject varchar2(50) not null,
+                    passwd varchar2(20) not null,
+	    reg_date date not null,
+	    readcount number default 0,
+	    ref number not null,
+	    re_step number not null,
+	    re_level number not null,
+	    content long not null,
+	    ip varchar2(20) not null,
+	    filename varchar2(30),
+	    constraint upload_pk primary key(num) );
+
+
+create sequence upload_seq increment by 1 
+			  start with 1
+			  nocycle;
+
+
+sequence 목록 보기
+SQL> select * from seq; 
+
+
+sequence 삭제
+SQL> drop sequence board_seq;

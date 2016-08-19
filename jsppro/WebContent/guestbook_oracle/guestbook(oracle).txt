@@ -1,0 +1,20 @@
+* 방명록
+
+create table GUESTBOOK (
+    GUESTBOOK_ID NUMBER,
+    REGISTER     DATE         NOT NULL,
+    NAME      VARCHAR2(20) NOT NULL,
+    EMAIL        VARCHAR2(40) NOT NULL,
+    PASSWORD     VARCHAR2(20),
+    CONTENT      VARCHAR2(2000) NOT NULL,
+    CONSTRAINT GUESTBOOK_PK PRIMARY KEY (GUESTBOOK_ID) );
+
+
+create sequence guestbook_seq 
+	increment by 1
+	start with 1
+	nocache;
+
+
+sequence 목록 보기
+SQL> select * from seq; 
