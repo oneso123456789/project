@@ -1,0 +1,37 @@
+nodejs와 MySQL 연동
+
+1. MySQL 설치
+
+   root / 1234
+
+
+2. MySQL접속후 company 데이터 베이스 생성
+
+   c:\> mysql -uroot -p1234 
+
+    mysql> create  database  company;
+
+
+3. products 테이블 생성
+
+   mysql> create table products(
+          id int auto_increment  primary key,
+          name varchar(50) not null,
+          modelnumber varchar(30) not null,
+	      series varchar(30) not null );
+
+
+
+4. mysql 모듈 설치
+  
+   nodepro 프로젝트 선택후 오른 마우스 클릭  
+
+   StartExplorer 메뉴 선택
+
+   Start Shell Here 메뉴 선택
+
+   d:\workspace\nodepro> npm  install  mysql
+
+   
+   mysql 모듈 설치후 nodepro 프로젝트를 선택한 상태에서 F5키 눌러서
+   새로고침을 하면 nodepro 프로젝트 하위에 node_modules 폴더가 나타남.
