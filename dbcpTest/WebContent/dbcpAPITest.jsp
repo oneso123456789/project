@@ -10,9 +10,9 @@
   		DataSource ds = (DataSource) init.lookup("java:comp/env/jdbc/OracleDB");
   		conn = ds.getConnection();
   		
-  		out.println("<h3>연결되었습니다.</h3>");
+  		out.println("<h3> 연결되었습니다.</h3>");
 	}catch(Exception e){
-		out.println("<h3>연결에 실패하였습니다.</h3>");
+		out.println("<h3> 연결에 실패하였습니다.</h3>");
 		e.printStackTrace();
 		System.out.println(e.getMessage());
 		System.out.println(e.toString());
