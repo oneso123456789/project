@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%="jsp테스트" %>
+<%="jsp테스트~!!" %>
 </body>
 </html>
